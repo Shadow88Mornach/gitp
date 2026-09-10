@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gitp"
+version = "0.1.0"
+description = "Swap git profiles: identity, SSH key and host token, in one command."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+gitp = "gitp.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gitp"]
