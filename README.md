@@ -5,8 +5,10 @@ Swap git profiles — identity, SSH key, signing key and host token — in one c
 ## Install
 
 ```sh
-pipx install ./gitp        # or: pip install -e .
+pipx install git+https://github.com/Shadow88Mornach/gitp
 ```
+
+Or from a clone: `pipx install .` (or `pip install -e .` for development).
 
 ## Use
 
@@ -57,3 +59,7 @@ Tokens are stored in plaintext in that file and in `~/.git-credentials`, both `0
 ```sh
 PYTHONPATH=src python3 -m pytest tests -q
 ```
+
+## License
+
+[MIT](LICENSE)
